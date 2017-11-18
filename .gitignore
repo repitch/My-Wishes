@@ -1,0 +1,27 @@
+# OS temporary files
+.DS_Store*
+Thumbs.db
+*~
+
+# IDE files
+.idea/*
+!.idea/inspectionProfiles
+.idea/inspectionProfiles/*
+!.idea/inspectionProfiles/Project_Default.xml
+!.idea/misc.xml
+*.iml
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# supress plugin generated files
+atlassian-ide-plugin.xml
+
+gradle.properties
+
+/captures/
+docs/

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="insert_photo_bg">#803F51B5</color>
+
+    <!-- Standard colors from tinkoff -->
+    <color name="n1">#333333</color>
+    <color name="n2">#3E4757</color>
+    <color name="n3">#9299A2</color>
+    <color name="n4">#C7C9CC</color>
+    <color name="n5">#DDDFE0</color>
+    <color name="n6">#EAECEE</color>
+    <color name="n7">#F6F7F8</color>
+    <color name="n8">#009ECF</color>
+    <color name="n9">#FFDD2D</color>
+    <color name="n10">#DD5656</color>
+    <color name="n11">#22A053</color>
+    <color name="n12">#ffcd33</color>
+
+    <color name="light_gray">@color/n5</color>
+    <color name="main_yellow">@color/n9</color>
+    <color name="main_yellow_pressed">@color/n12</color>
+    <color name="main_yellow_ripple">#dab12e</color>
+
+    <!-- reference colors with names-->
+    <color name="text_dark">@color/n1</color>
+    <color name="text_light">@color/n3</color>
+    <color name="text_hint">@color/n4</color>
+    <color name="text_blue">@color/n8</color>
+    <color name="text_red">@color/n10</color>
+    <color name="text_green">@color/n11</color>
+    <color name="text_light_blue">#73BEDE</color>
+    <color name="text_disabled">#4d333333</color>
+    <color name="text_lighter">#f7f7f7</color>
+    <color name="dividers">@color/n4</color>
+    <color name="green_ok">#5ada8c</color>
+
+    <color name="white">#fff</color>
+    <color name="white_20">#33ffffff</color>
+    <color name="white_50">#80ffffff</color>
+    <color name="white_70">#b4ffffff</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="gray">@color/n6</color>
+    <color name="gray_ripple">@color/n5</color>
+</resources>

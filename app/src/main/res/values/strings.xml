@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Wishes</string>
+    <string name="ok">OK</string>
+    <string name="cancel">отмена</string>
+</resources>

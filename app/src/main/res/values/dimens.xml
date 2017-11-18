@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text size -->
+    <dimen name="text_extra_large">24sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_extra_small">12sp</dimen>
+    <dimen name="text_xxs_small">11sp</dimen>
+    <dimen name="text_tiny">9sp</dimen>
+
+    <!-- Offsets (padding, margin) -->
+    <dimen name="offset_double">32dp</dimen>
+    <dimen name="offset">16dp</dimen>
+    <dimen name="offset_half">8dp</dimen>
+    <dimen name="offset_quarter">4dp</dimen>
+
+    <dimen name="list_item_height">48dp</dimen>
+    <dimen name="list_item_left_padding">72dp</dimen>
+    <dimen name="divider_thickness">0.5dp</dimen>
+
+    <dimen name="tile_height_default_item">48dp</dimen>
+    <dimen name="tile_height_medium_item">56dp</dimen>
+    <dimen name="tile_height_large_item">72dp</dimen>
+    <dimen name="tile_height_extra_large_item">88dp</dimen>
+</resources>
