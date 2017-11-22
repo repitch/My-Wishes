@@ -45,4 +45,7 @@
     <color name="grey_300">#E0E0E0</color>
     <color name="gray">@color/n6</color>
     <color name="gray_ripple">@color/n5</color>
+    <color name="black">#000</color>
+    <color name="black_55">#50000000</color>
+    <color name="black_0">#00000000</color>
 </resources>

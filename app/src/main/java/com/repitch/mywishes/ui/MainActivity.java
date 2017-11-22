@@ -14,7 +14,6 @@ import com.repitch.mywishes.R;
 import com.repitch.mywishes.db.entity.Wish;
 import com.repitch.mywishes.model.WishRepository;
 
-import io.reactivex.Scheduler;
 import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
@@ -75,11 +74,11 @@ public class MainActivity extends AppCompatActivity implements WishesAdapter.Wis
     }
 
     private void addWish() {
-        startActivityForResult(AddWishActivity.createIntent(this), REQUEST_CODE_ADD_WISH);
+        startActivityForResult(EditWishActivity.createIntent(this), REQUEST_CODE_ADD_WISH);
     }
 
     @Override
     public void onWishClicked(Wish wish) {
-        startActivityForResult(AddWishActivity.createIntent(this, wish.getId()), REQUEST_CODE_ADD_WISH);
+        startActivityForResult(WishDetailActivity.createIntent(this, wish.getId()), REQUEST_CODE_ADD_WISH);
     }
 }

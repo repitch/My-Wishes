@@ -21,7 +21,8 @@ public class WishRepository extends SingleDaoService<Wish, Integer> {
         return getDao().queryForAll();
     }
 
-    public void updateWish(Wish wish) {
+    public Wish updateWish(Wish wish) {
         getDao().createOrUpdate(wish);
+        return wish;
     }
 }
