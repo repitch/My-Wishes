@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,6 +20,7 @@ import com.repitch.mywishes.R;
 import com.repitch.mywishes.db.entity.Wish;
 import com.repitch.mywishes.model.WishRepository;
 
+import io.reactivex.Completable;
 import io.reactivex.Single;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
@@ -67,6 +69,9 @@ public class WishDetailActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.delete_wish:
+                showDeleteAlert();
+                return true;
             case R.id.edit_wish:
                 startActivityForResult(EditWishActivity.createIntent(this, getWishId()), REQUEST_CODE_EDIT);
                 return true;
@@ -75,6 +80,26 @@ public class WishDetailActivity extends AppCompatActivity {
                 return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showDeleteAlert() {
+        AlertDialog alertDialog = new AlertDialog.Builder(this)
+                .setTitle(R.string.wish_delete_title)
+                .setMessage(R.string.wish_delete_message)
+                .setPositiveButton(R.string.wish_delete_ok_btn, (dialogInterface, i) -> deleteWish(getWishId()))
+                .setNegativeButton(R.string.cancel, null)
+                .show();
+    }
+
+    private void deleteWish(int wishId) {
+        Completable.fromAction(() -> wishRepository.deleteWish(wishId))
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(() -> {
+                    Toast.makeText(this, R.string.wish_delete_success_message, Toast.LENGTH_SHORT).show();
+                    setResult(RESULT_OK);
+                    finish();
+                }, Timber::e);
     }
 
     @Override

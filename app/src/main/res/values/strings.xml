@@ -2,4 +2,12 @@
     <string name="app_name">My Wishes</string>
     <string name="ok">OK</string>
     <string name="cancel">отмена</string>
+
+    <string name="wish_delete">Удалить</string>
+    <string name="wish_share">Поделиться</string>
+    <string name="wish_edit">Редактировать</string>
+    <string name="wish_delete_title">Подтверждение</string>
+    <string name="wish_delete_message">Вы уверены, что хотите удалить желание?</string>
+    <string name="wish_delete_ok_btn">да, удалить</string>
+    <string name="wish_delete_success_message">Желание удалено</string>
 </resources>

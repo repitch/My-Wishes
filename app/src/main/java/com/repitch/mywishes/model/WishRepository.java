@@ -25,4 +25,8 @@ public class WishRepository extends SingleDaoService<Wish, Integer> {
         getDao().createOrUpdate(wish);
         return wish;
     }
+
+    public void deleteWish(int wishId) {
+        getDao().deleteById(wishId);
+    }
 }
